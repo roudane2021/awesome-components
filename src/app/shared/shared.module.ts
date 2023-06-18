@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ShortenPipe } from './pipes/shorten.pipe';
 import { TimeAgoPipe } from './pipes/time.ago.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,6 +23,6 @@ import { HighlightDirective } from './directives/highlight.directive';
     MaterialModule,
     ReactiveFormsModule
   ],
-  exports: [MaterialModule, CommentsComponent,ReactiveFormsModule, ShortenPipe, TimeAgoPipe,HighlightDirective]
+  exports: [MaterialModule, CommentsComponent,ReactiveFormsModule, ShortenPipe, TimeAgoPipe,HighlightDirective,HttpClientModule]
 })
 export class SharedModule { }
