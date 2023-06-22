@@ -2,9 +2,11 @@ import { ChangeDetectionStrategy, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
 import { SingleCandidateComponent } from './components/single-candidate/single-candidate.component';
+import { ParentComponent } from './components/parent/parent.component';
 
 const routes: Routes = [
   {path:'candidates',component:CandidateListComponent},
+  {path:'test',component: ParentComponent},
   {path:'candidates/:id',component: SingleCandidateComponent},
   {path:'',pathMatch:'full',redirectTo:'candidates'}
 

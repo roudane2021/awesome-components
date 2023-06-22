@@ -7,12 +7,16 @@ import { SingleCandidateComponent } from './components/single-candidate/single-c
 import { CandidatesService } from './services/candidates.service';
 import { share } from 'rxjs';
 import { SharedModule } from '../shared/shared.module';
+import { ParentComponent } from './components/parent/parent.component';
+import { EnfantComponent } from './components/parent/enfant/enfant.component';
 
 
 @NgModule({
   declarations: [
     CandidateListComponent,
-    SingleCandidateComponent
+    SingleCandidateComponent,
+    ParentComponent,
+    EnfantComponent
   ],
   imports: [
     CommonModule,

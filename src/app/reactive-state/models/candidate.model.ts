@@ -14,3 +14,8 @@ export class Candidate {
     FIRSTNAME = 'firstName',
     COMPANY = 'company'
   }
+
+  export class Personne {
+    id!: number;
+    firstName!: string;
+  }
